@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="wifiCloseBy">WIFI close by</string>
+    <string name="wifiFurtherAway">WIFI further away</string>
+    <string name="scanning">scanning</string>
+    <string name="showingMaxWifis">showing max %d wifis</string>
+
+    <string name="wifiDetails_title">WIFI Details</string>
+
+    <string name="wifiDetails_fullName">Full Name:&#160;</string>
+    <string name="wifiDetails_owner">Owner:&#160;</string>
+    <string name="wifiDetails_provider">Internet Provider:&#160;</string>
+    <string name="wifiDetails_ipAddress">IP Address:&#160;</string>
+    <string name="wifiDetails_signalStrength">Signal Strength:&#160;</string>
+    <string name="wifiDetails_distance">Distance (meter):&#160;</string>
+    <string name="wifiDetails_connectionSpeed">Connection Speed (Mbps):&#160;</string>
+    <string name="wifiDetails_security">Security:&#160;</string>
+    <string name="wifiDetails_status">Status:&#160;</string>
+
+    <string name="wifiStatus_connected">connected</string>
+    <string name="wifiStatus_notConnected">not connected</string>
+    <string name="wifiStatus_connectedNoInternetAccess">connected (no internet access)</string>
+    <string name="wifiStatus_connectedSignInRequired">connected (sign in required)</string>
+    <string name="showMore">show more</string>
+</resources>

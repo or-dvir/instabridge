@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--wrapping in scroll view to make sure it fits on small screens
+and landscape orientation-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".vvm.ActivityWifiDetails">
+
+        <!--data is displayed in no particular order-->
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_fullMame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_fullName"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_owner"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_provider"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_ipAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_ipAddress"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_signalStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_signalStrength"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_distance"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_connectionSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_connectionSpeed"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_security"/>
+
+        <TextView
+            android:id="@+id/activityWifiDetails_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifiDetails_status"/>
+    </LinearLayout>
+</ScrollView>

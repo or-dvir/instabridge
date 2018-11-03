@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--wrapping in scroll view to make sure it fits on small screens
+and landscape orientation-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".vvm.ActivityMain">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/activityMain_container_closeBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wifi_border"
+            android:orientation="vertical"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toTopOf="@+id/activityMain_container_furtherAway"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/wifiCloseBy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"/>
+
+            <View
+                style="@style/divider"/>
+
+            <include
+                android:id="@+id/activityMain_wifiClose_1"
+                layout="@layout/wifi_row"/>
+
+            <View
+                android:id="@+id/dividerTop_1"
+                style="@style/divider"/>
+
+            <include
+                android:id="@+id/activityMain_wifiClose_2"
+                layout="@layout/wifi_row"/>
+
+            <View
+                android:id="@+id/dividerTop_2"
+                style="@style/divider"/>
+
+            <include
+                android:id="@+id/activityMain_wifiClose_3"
+                layout="@layout/wifi_row"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activityMain_container_furtherAway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/wifi_border"
+            android:orientation="vertical"
+            android:text="Hello World!"
+            app:layout_constraintTop_toBottomOf="@+id/activityMain_container_closeBy">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/wifiFurtherAway"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"/>
+
+            <View
+                style="@style/divider"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activityMain_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                style="@style/divider"/>
+
+            <Button
+                android:id="@+id/activityMain_btn_showMore"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/showMore"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
